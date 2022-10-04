@@ -35,7 +35,7 @@ public class BugController {
      * @return
      */
 
-    @DeleteMapping(value="delete-bug/{delete-id}")
+    @DeleteMapping(value="/delete-bug/{id}")
     public ResponseEntity<?> deleteBug(@PathVariable Long id){
         if(id ==null){
             throw new BugNotFoundException("id can't found ");
